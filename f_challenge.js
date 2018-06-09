@@ -3,6 +3,10 @@ function actual_facts(facts, schema) { // Solução.
 
     var many = {}; // Objeto temporário.
     var one = {}; // Objeto temporário.
+    /* Utilizando esses objetos para verificar quais variáveis já ocorreram nos 
+    fatos espera-se uma redução na complexidade do algoritmo, pois como os
+    objetos são arrays associativos, não é necessário percorrer todos os facts
+    novamente. */
     var actual_facts = []; /* Vai obter os fatos vigentes e ser retornado
     no fim.*/
 
